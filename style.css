@@ -19,7 +19,7 @@ body {
   align-items: center;
   background-color: #232f3e;
   font-size: 14px;
-  width: 940px; /*940px bara för att det var lättast att jobba i */
+  width: 972px; /*972px bara för att det var lättast att jobba i */
   height: 39px;
   padding: 8px 9px 8px 9px;
   margin: 5px 0 6px 0;
@@ -51,8 +51,8 @@ body {
   background-color: #cdcdcd;
   text-align: center;
 }
-.trestreck {
-}
+/* .trestreck {
+} */
 
 #searchbar {
   width: 194px;
@@ -60,6 +60,10 @@ body {
 }
 /* transform: translate(182%, -216%);
    */
+
+.upper-carousel {
+  width: 940px;
+}
 
 .footer {
   display: block;
