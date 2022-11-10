@@ -1,5 +1,11 @@
 @import url("http://fonts.cdnfonts.com/css/amazon-ember");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: "amazon ember", sans-serif;
@@ -60,6 +66,23 @@ body {
 }
 /* transform: translate(182%, -216%);
    */
+
+.container .box1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  background-color: aqua;
+  justify-content: space-between;
+}
+
+.container .box2 {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 10%;
+  justify-content: space-between;
+}
 
 .upper-carousel {
   width: 940px;
