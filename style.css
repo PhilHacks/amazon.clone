@@ -39,6 +39,13 @@ body {
   height: 50px;
 }
 
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  
+}
+
 /* 
     # är för id i html
     .är för class i html 
