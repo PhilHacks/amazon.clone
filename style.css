@@ -1,6 +1,7 @@
-@import url("http://fonts.cdnfonts.com/css/amazon-ember");
+@import url("http://fonts.cdnfonts.com/css/amazon-ember"); /* font url */
 
 * {
+  /* universal selektor som påverkar alla element */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -45,9 +46,9 @@ body {
   justify-content: left;
 }
 
-/* 
+/*
     # är för id i html
-    .är för class i html 
+    .är för class i html
 */
 .active {
   text-decoration: none;
