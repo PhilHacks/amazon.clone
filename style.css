@@ -1,11 +1,12 @@
 @import url("http://fonts.cdnfonts.com/css/amazon-ember"); /* font url */
 
+/* 
 * {
-  /* universal selektor som påverkar alla element */
+  /* universal selektor som påverkar alla element 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   margin: 0;
@@ -39,11 +40,12 @@ body {
   justify-content: left;
   height: 50px;
 }
-
-.boxes {
+.product-card {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border-style: solid;
 }
 
 /*
@@ -93,6 +95,23 @@ body {
   width: 10%;
   height: 10%;
   justify-content: space-between;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  border-style: solid;
+  border-color: #22131b;
+}
+
+.watch-gallery {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  border-style: solid;
 }
 
 .footer {
