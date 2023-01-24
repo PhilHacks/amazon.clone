@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  
 }
 
 /* 
@@ -74,7 +73,11 @@ body {
 /* transform: translate(182%, -216%);
    */
 
-.container .box1 {
+.upper-carousel {
+  width: 940px;
+}
+
+.product-card.household {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -83,16 +86,12 @@ body {
   justify-content: space-between;
 }
 
-.container .box2 {
+.product-card.deal {
   display: flex;
   flex-direction: row;
   width: 10%;
   height: 10%;
   justify-content: space-between;
-}
-
-.upper-carousel {
-  width: 940px;
 }
 
 .footer {
