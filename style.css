@@ -47,7 +47,12 @@ body {
 
 .topnav > * {
   margin: 10px;
-  border-style: solid;
+  /* border-style: solid; */
+}
+.huvudbox {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
 }
 
 /* .flex-container {
@@ -58,15 +63,16 @@ body {
   display: flex;
   justify-content: row;
   flex-wrap: wrap;
-  border-style: none;
-  margin-top: -250px;
+  margin-top: -350px;
+  /* border-style: solid; */
+  width: 100%;
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 23%;
+  width: 24%;
   /* border-style: solid; */
   outline: 0.2vw solid red;
   background-color: white;
@@ -121,8 +127,9 @@ body {
 /* transform: translate(182%, -216%);
    */
 
-.upper-carousel {
-  width: 940px;
+.carousel {
+  width: 100%;
+  border-style: solid;
 }
 
 .blue-links {
