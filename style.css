@@ -60,23 +60,35 @@ body {
 } */
 
 .Outer-box {
-  display: flex;
+  /*   display: flex;
   justify-content: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: -350px;
-  /* border-style: solid; */
+  border-style: solid;
   width: 100%;
+
+  /* grid-auto-rows: minmax(
+    150px,
+    auto
+  ) Gör alla rader minst 150px och max auto höga 
+  grid-gap: 20px; /* Definerar margin på både row och column samtidigt */
+  /* justify-content: center; 
+  align-content: center;
+  height: 100px; */
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 23%;
+  /* min-width: 23%;
   width: 23%;
   min-height: 50px;
-  height: 23%;
+  height: 23%; */
   /* border-style: solid; */
+
   outline: 0.2vw solid red;
   background-color: white;
   padding-top: 10px;
@@ -177,7 +189,7 @@ body {
   flex-wrap: wrap;
   min-width: 90%;
   width: 90%;
-  height: 0px;
+  /* height: 0px; */
   border-style: solid;
   border-color: #22131b;
 }
@@ -207,4 +219,17 @@ body {
   height: 139.38px;
   color: #dddddd;
   text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat (4, 100px); /* Detta ger 4 boxar som alla är 100px */
+  grid-auto-rows: minmax(
+    150px,
+    auto
+  ); /* Gör alla rader minst 150px och max auto höga */
+  grid-gap: 20px; /* Definerar margin på både row och column samtidigt */
+  justify-content: center; /* Places grind in the center of hortizontal axis */
+  align-content: center;
+  height: 100px;
 }
