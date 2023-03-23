@@ -155,15 +155,22 @@ body {
 } */
 
 .loginbutton {
+  font-family: "amazon ember", sans-serif;
   color: #0f1111;
   background-color: #ffd814;
   width: 100%;
-  border-radius: 7px;
+  height: 100px;
+  border-radius: 4px;
+  /* overflow: visible; */
 }
 
 .sign-in-button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: "white";
-  height: 200px;
+  height: 142px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   margin-top: 20px;
@@ -171,14 +178,22 @@ body {
 }
 
 .loginbuttonNedre {
+  font-family: "amazon ember", sans-serif;
   color: #0f1111;
   background-color: #ffd814;
   width: 230px;
   height: 28px;
-  border-radius: 3px;
+  border-radius: 4px;
   position: relative;
-  left: 50%;
-  top: 50%;
+}
+
+.ny-kund-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.small-blue-link {
+  text-decoration: none;
 }
 
 #searchbar {
@@ -234,7 +249,7 @@ body {
   border-style: solid;
   border-color: #1e9c48;
 }
-f .box2 {
+.box2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
