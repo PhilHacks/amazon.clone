@@ -28,8 +28,9 @@ body {
   height: 50px;
 }
 
-.amazonlogga:hover {
-  border: 1px solid #d0d0d0;
+.nav-belt-button:hover {
+  outline: 1px solid #d0d0d0;
+  border-radius: 2px;
 }
 
 .topnav {
