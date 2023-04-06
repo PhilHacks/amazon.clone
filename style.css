@@ -330,6 +330,10 @@ body {
   text-align: center;
 }
 
+.heeej {
+  color: "red";
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat (4, 100px); /* Detta ger 4 boxar som alla är 100px */
