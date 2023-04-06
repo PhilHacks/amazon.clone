@@ -330,15 +330,6 @@ body {
   text-align: center;
 }
 
-.heeej {
-  color: "red";
-}
-
-.hallåeller {
-  color: "blue";
-  background-color: #0f1111;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat (4, 100px); /* Detta ger 4 boxar som alla är 100px */
