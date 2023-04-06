@@ -28,6 +28,10 @@ body {
   height: 50px;
 }
 
+.amazonlogga:hover {
+  border: 1px solid #d0d0d0;
+}
+
 .topnav {
   display: flex;
   justify-content: flex-start;
