@@ -33,6 +33,15 @@ body {
   border-radius: 2px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sok-kategorier-content {
+  display: none;
+}
+
 .topnav {
   display: flex;
   justify-content: flex-start;
