@@ -174,13 +174,18 @@ body {
   border-radius: 4px;
 }
 
-.button {
-  color: #0f1111;
+.kategorier-button {
+  color: #3b3b3b;
   width: 112.88px;
   border-style: none;
-  background-color: #cdcdcd;
+  background-color: #e3e2e2;
   text-align: center;
   font-size: 12px;
+}
+
+.kategorier-button:hover {
+  background-color: #cdcdcd;
+  color: #0f1111;
 }
 /* #trestreck {
 } */
