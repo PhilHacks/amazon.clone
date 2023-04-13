@@ -35,7 +35,7 @@ body {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 .sok-kategorier-content {
