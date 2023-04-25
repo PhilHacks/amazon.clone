@@ -186,7 +186,8 @@ body {
   width: 112.88px;
   border-style: none;
   background-color: #e3e2e2;
-  text-align: center;
+  text-align: flex-start;
+  padding-left: 7px;
   font-size: 12px;
   height: 100%;
   border-top-left-radius: 4px;
