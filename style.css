@@ -65,6 +65,13 @@ body {
   display: block;
 }
 
+.forstoringsglas{
+background-color: transparent;
+border: none;
+cursor: pointer;
+padding: 0;  
+} 
+
 .topnav {
   display: flex;
   justify-content: flex-start;
