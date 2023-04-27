@@ -65,6 +65,19 @@ body {
   display: block;
 }
 
+.input-div {
+  height: '100%';
+  width: '100%';
+}
+
+.searchbar-class {
+  /* background-color: red; */
+  /* height: '100%'; */
+  /* width: '50%'; */
+  border-width: 5;
+  border-color: #1e9c48;
+}
+
 .forstoringsglas{
 background-color: transparent;
 border: none;
