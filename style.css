@@ -33,12 +33,7 @@ body {
   border-radius: 2px;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.sok-kategorier-content {
+/* .sok-kategorier-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -46,14 +41,14 @@ body {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
+} */
 
-.sok-kategorier-content a {
+/* .sok-kategorier-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
+} */
 /* .sok-kategorier-content a:hover {
   color: black;
   padding: 12px 16px;
@@ -72,6 +67,31 @@ body {
   overflow: visible;
   border-radius: 4px;
   outline-color: #ff9900;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.kategorier-button {
+  color: #3b3b3b;
+  /* width: 112.88px; */
+  /* max-width: fit-content; */
+  /* object-fit:fill; */
+  border-style: none;
+  background-color: #e3e2e2;
+  text-align: flex-start;
+  padding-left: 7px;
+  font-size: 12px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.kategorier-button:hover {
+  background-color: #cdcdcd;
+  color: #0f1111;
 }
 
 .form-class {
@@ -210,23 +230,6 @@ body {
   margin-left: 5px;
 }
 
-.kategorier-button {
-  color: #3b3b3b;
-  width: 112.88px;
-  border-style: none;
-  background-color: #e3e2e2;
-  text-align: flex-start;
-  padding-left: 7px;
-  font-size: 12px;
-  height: 100%;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.kategorier-button:hover {
-  background-color: #cdcdcd;
-  color: #0f1111;
-}
 /* #trestreck {
 } */
 
