@@ -17,7 +17,7 @@
       </div>
       <div class="sok-modul">
         <div class="dropdown">
-          <select class="kategorier-button" onclick="dropDownFunction()">
+          <select class="kategorier-button" onchange="adjustWidth()" onclick="dropDownFunction()">
             <option>Alla kategorier</option>
             <option>Amazon-enheter</option>
             <option>Babyprodukter</option>
@@ -242,6 +242,12 @@
     <script>
       function dropDownFunction() {
         document.getElementById("sok-kategorier").classList.toggle("show");
+      }
+      function adjustWidth() {
+        var select = document.querySelector('.kategorier-button');
+        var selectedOption = select.options[select.selectedIndex];
+        var optionWIdth = selectedOption.offsetWidth;
+        select.style.width = optionWidth + 'px';
       }
     </script>
   </body>
