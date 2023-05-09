@@ -72,15 +72,11 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  /* display: flex; */
-  width: 100%;
 }
 
 .kategorier-button {
   color: #3b3b3b;
-  display: flex;
-  /* flex: 1; */
-  width: fit-content;
+  /* width: 112.88px; */
   /* max-width: fit-content; */
   /* object-fit:fill; */
   border-style: none;
