@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Clone</title>
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link href="path/to/select2.css" rel="stylesheet" />
   </head>
   <body class="body">
     <header id="nav-belt">
@@ -19,13 +20,14 @@
         <div class="dropdown">
           <select
             class="kategorier-button"
-            onchange="adjustWidth()"
+            id="kategorier-select"
+            
             onclick="dropDownFunction()"
           >
-            <option>Alla kategorier</option>
-            <option>Amazon-enheter</option>
-            <option>Babyprodukter</option>
-            <option>
+            <option value="">Alla kategorier</option>
+            <option value="1">Amazon-enheter</option>
+            <option value="2">Babyprodukter</option>
+            <option value="3">
               DÅAmazon-enheter Amazon-enheter Amazon-enheterAmazon-enheter
             </option>
           </select>
@@ -253,6 +255,12 @@
         var optionWidth = selectedOption.offsetWidth;
         select.style.width = optionWidth + "px";
       }
-    </script>
+      </script>
+      <script src="path/to/select2.js">
+        $(document).ready(function() {
+          $('#kategorier-select').select2();
+        });
+
+      </script>
   </body>
 </html>
