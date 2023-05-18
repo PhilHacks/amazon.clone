@@ -18,11 +18,7 @@
       </div>
       <div class="sok-modul">
         <div class="dropdown">
-          <select
-            class="kategorier-button"
-            id="kategorier-select"
-            onclick="dropDownFunction()"
-          >
+          <select class="kategorier-button" id="kategorier-select">
             <option value="">Alla kategorier</option>
             <option value="1">Amazon-enheter</option>
             <option value="2">Babyprodukter</option>
@@ -245,15 +241,15 @@
       <footer>© 1996-2023, Amazon.com, Inc. eller dess dotterbolag</footer>
     </div>
     <script>
-      function dropDownFunction() {
-        document.getElementById("sok-kategorier").classList.toggle("show");
-      }
-      function adjustWidth() {
-        var select = document.querySelector(".kategorier-button");
-        var selectedOption = select.options[select.selectedIndex];
-        var optionWidth = selectedOption.offsetWidth;
-        select.style.width = optionWidth + "px";
-      }
+      // function dropDownFunction() {
+      //   document.getElementById("sok-kategorier").classList.toggle("show");
+      // }
+      // function adjustWidth() {
+      //   var select = document.querySelector(".kategorier-button");
+      //   var selectedOption = select.options[select.selectedIndex];
+      //   var optionWidth = selectedOption.offsetWidth;
+      //   select.style.width = optionWidth + "px";
+      // }
     </script>
     <script>
       // document.addEventListener("DOMContentLoaded", function () {
