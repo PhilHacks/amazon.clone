@@ -22,6 +22,7 @@
 //   },
 // });
 
+//Ny implemention med vanilla.js
 const selectElement = document.getElementById("kategorier-select");
 
 const updateDropdownWidth = () => {
