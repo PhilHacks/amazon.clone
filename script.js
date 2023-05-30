@@ -27,7 +27,7 @@ const selectElement = document.getElementById("kategorier-select");
 
 const updateDropdownWidth = () => {
   const selectedOption = selectElement.options[selectElement.selectedIndex];
-  const textWidth = selectedOption.text.length * 10; // Justera konstanten för att passa din design
+  const textWidth = selectedOption.clientWidth; // selectedOption.text.length * 10; // Justera konstanten för att passa din design
   selectElement.style.width = textWidth + "px";
 };
 
