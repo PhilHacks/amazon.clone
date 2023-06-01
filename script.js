@@ -27,9 +27,23 @@ const selectElement = document.getElementById("kategorier-select");
 
 const updateDropdownWidth = () => {
   const selectedOption = selectElement.options[selectElement.selectedIndex];
-  const textWidth = selectedOption.clientWidth; // selectedOption.text.length * 10; // Justera konstanten för att passa din design
+  const selectedText = selectedOption.textContent.trim();
+
+  const tempSpan = document.createElement('span');
+  tempSpan.style.visibility = 'hidden';
+  tempSpan.style.whiteSpace = 'nowrap';
+  tempSpan.textContent = selectedText;
+  document.body.appendChild(tempSpan);
+  console.log('AppendChild');
+  console.log('tempSpan', tempSpan);
+  
+  const textWidth = tempSpan.clientWidth;
+  document.body.removeChild(tempSpan);
+  // const textWidth = selectedOption.clientWidth; // selectedOption.text.length * 10; // Justera konstanten för att passa din design
+  console.log('Bredd', textWidth);
   selectElement.style.width = textWidth + "px";
 };
 
 selectElement.addEventListener("change", updateDropdownWidth);
-window.addEventListener("load", updateDropdownWidth);
+document.addEventListener("DOMContentLoaded", updateDropdownWidth);
+// window.addEventListener("load", updateDropdownWidth);

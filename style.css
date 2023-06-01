@@ -105,9 +105,11 @@ body {
 }
 
 #kategorier-select {
-  width: auto;
+  width: auto !important;
   min-width: 100px;
   max-width: 600px;
+  /* display: none; */
+  /* overflow: hidden !important; */
   /* height: 40px;
   font-size: 12px;
   color: #3b3b3b;
