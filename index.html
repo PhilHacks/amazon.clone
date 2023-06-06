@@ -17,7 +17,11 @@
       </div>
       <div class="sok-modul">
         <div class="dropdown">
-          <select class="kategorier-button" id="kategorier-select">
+          <select
+            class="kategorier-button"
+            id="kategorier-select"
+            onchange="updateDropdownWidth(this)"
+          >
             <option value="">Alla kategorier</option>
             <option value="1">Amazon-enheter</option>
             <option value="2">Babyprodukter</option>
