@@ -12,5 +12,8 @@ buttonLabel.textContent = "Alla kategorier...";
 // Eventet innehåller massa information, men bl.a. det nya värdet (event.target.value) för select
 // som vi använder för att sätta ett nytt textContent på button labeln.
 selectElement.addEventListener("change", (event) => {
-  buttonLabel.textContent = event.target.value;
+  const selectedIndex = event.target.selectedIndex;
+  const selectedOption = event.target.options[selectedIndex];
+  const optionText = selectedOption.textContent;
+  buttonLabel.textContent = optionText;
 });
