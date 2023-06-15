@@ -48,7 +48,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-} 
+}
 .sok-kategorier-content a:hover {
   color: black;
   padding: 12px 16px;
@@ -69,14 +69,19 @@ body {
   outline-color: #ff9900;
 }
 
-.dropdown {
+.button-container {
   position: relative;
+  overflow: hidden;
   display: inline-block;
-  /* width: 100%; */
 }
 
-.kategorier-button {
+.button-ish {
   display: inline-block;
+  border: cadetblue solid 3px;
+  background: lightblue;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  /* display: inline-block;
   position: relative;
   width: 100%;
   height: 100%;
@@ -87,37 +92,37 @@ body {
   padding-right: 30px;
   color: #3b3b3b;
   background-color: #e3e2e2;
-  border: none;
+  border: none; */
   /* border-bottom-right-radius: 4px; */
-/* border-bottom-left-radius: 4px; */
-/* appearance: none; */
+  /* border-bottom-left-radius: 4px; */
+  /* appearance: none; */
 
-/* min-width: 100px; */
-/* width: 312.88px; */
-/* max-width: fit-content; */
-/* object-fit:fill; */
-/* text-align: flex-start; */
- }
+  /* min-width: 100px; */
+  /* width: 312.88px; */
+  /* max-width: fit-content; */
+  /* object-fit:fill; */
+  /* text-align: flex-start; */
+}
 
-.kategorier-button:hover {
+.button-ish:hover {
   background-color: #cdcdcd;
   color: #0f1111;
 }
 
-#kategorier-select {
-  width: auto !important;
-  min-width: 100px;
-  max-width: 600px;
-  /* display: none; */
-  /* overflow: hidden !important; */
-  /* height: 40px;
-  font-size: 12px;
-  color: #3b3b3b;
-  background-color: #e3e2e2;
-  border: none;
-  border-radius: 4px;
-  padding-left: 10px;
-  padding-right: 30px; */
+.select-form {
+  border: red solid 1px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 100%;
+}
+
+.select {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
 }
 
 .form-class {

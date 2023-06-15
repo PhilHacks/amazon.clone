@@ -16,30 +16,20 @@
         <img src="Images/valj.adress.png" height="50" width="114" />
       </div>
       <div class="sok-modul">
-        <div class="dropdown">
-          <button class="kategorier-button" onclick="dropDownFunction()">
-          ALLA KATEGORIER
-          </button>
-          <div id="sok-kategorier" class="sok-kategorier-content">
-            <a href="#home">Home</a>
-            <a href="#home">Home</a>
-            <a href="#home">Home</a>
+        <div class="button-container">
+          <div class="button-ish"> 
+              <span class="button-label"></span> 
           </div>
-          <!-- <select class="kategorier-button" id="kategorier-select">
-            <option value="">Alla kategorier</option>
-            <option value="1">Amazon-enheter</option>
-            <option value="2">Babyprodukter</option>
-            <option value="3">
-              DÅAmazon-enheter Amazon-enheter Amazon-enheterAmazon-enheter
-            </option>
-          </select> -->
-          <!-- <div id="sok-kategorier" class="sok-kategorier-content"> -->
-          <!-- <select> -->
-
-          <!-- </select> -->
-          <!-- <a href="#home">Home</a>
-                <a href="#home">Home</a>
-                <a href="#home">Home</a> -->
+          <form class="select-form">
+            <select class="select">
+              <option>Alla kategorier</option>
+              <option>Amazon-enheter</option>
+              <option value="2">Babyprodukter</option>
+              <option value="3">
+                DÅAmazon-enheter Amazon-enheter Amazon-enheterAmazon-enheter
+              </option>
+            </select>
+          </form>
           </div>
         </div>
         <form class="form-class">
@@ -247,23 +237,6 @@
     <div class="footer" id="se-mer">
       <footer>© 1996-2023, Amazon.com, Inc. eller dess dotterbolag</footer>
     </div>
-    <script>
-      // function dropDownFunction() {
-      //   document.getElementById("sok-kategorier").classList.toggle("show");
-      // }
-      // function adjustWidth() {
-      //   var select = document.querySelector(".kategorier-button");
-      //   var selectedOption = select.options[select.selectedIndex];
-      //   var optionWidth = selectedOption.offsetWidth;
-      //   select.style.width = optionWidth + "px";
-      // }
-    </script>
-    <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   var selectElement = document.getElementById("kategorier-select");
-      //   Select2.init(selectElement);
-      // });
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
