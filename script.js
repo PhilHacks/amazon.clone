@@ -17,3 +17,8 @@ selectElement.addEventListener("change", (event) => {
   const optionText = selectedOption.textContent;
   buttonLabel.textContent = optionText;
 });
+
+//rad att hämtar från select (value)
+//select visas som första alternativ
+
+//kod snut som vi kan återanvända
