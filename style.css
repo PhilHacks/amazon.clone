@@ -83,16 +83,22 @@ body {
   position: absolute;
   opacity: 0;
   top: 0;
-  left: 0;
   height: 100%;
   min-width: 100%;
+  
 }
+
 
 .select {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
+
+option {
+  overflow-y:scroll;
+}
+
 
 .input-div {
   height: 100%;
