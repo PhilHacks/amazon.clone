@@ -10,12 +10,13 @@ body {
   font-family: "amazon ember", sans-serif;
 }
 
-#nav-belt > * {
+.nav-belt > * {
   margin: 10px;
 }
 
-#nav-belt {
+.nav-belt {
   background-color: #131921;
+  
   padding-top: 5px;
   /* padding-bottom: 5px;
   padding-left: -5%; */
@@ -26,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  position: relative;
 }
 
 .nav-belt-button:hover {
@@ -99,6 +101,29 @@ option {
   overflow-y:scroll;
 }
 
+.language-dropdown {
+  height: 200px;
+  width: 200px;
+  
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.language-dropdown-1 {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+.language-dropdown img {
+  height: 50px;
+  width: 40px;
+}
+
+
 
 .input-div {
   height: 100%;
@@ -145,6 +170,7 @@ option {
   margin-left: 10%;
   margin-right: 10%;
   width: auto;
+  
 }
 
 /* .flex-container {
