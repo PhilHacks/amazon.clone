@@ -16,7 +16,7 @@ body {
 
 .nav-belt {
   background-color: #131921;
-  
+
   padding-top: 5px;
   /* padding-bottom: 5px;
   padding-left: -5%; */
@@ -87,9 +87,7 @@ body {
   top: 0;
   height: 100%;
   min-width: 100%;
-  
 }
-
 
 .select {
   cursor: pointer;
@@ -98,32 +96,20 @@ body {
 }
 
 option {
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
-.language-dropdown {
-  height: 200px;
-  width: 200px;
-  
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  
+.nav-flyout {
+  position: relative;
+  display: inline-block;
 }
 
-.language-dropdown-1 {
-  height: 50px;
-  width: 100px;
+.language-selector {
   background-color: white;
-  border: 2px solid red;
+  color: blue;
+  height: 10px;
+  width: 10px;
 }
-
-.language-dropdown img {
-  height: 50px;
-  width: 40px;
-}
-
-
 
 .input-div {
   height: 100%;
@@ -170,7 +156,6 @@ option {
   margin-left: 10%;
   margin-right: 10%;
   width: auto;
-  
 }
 
 /* .flex-container {
