@@ -119,11 +119,40 @@ option {
 }
 
 .language-selector {
-  outline: 1px solid #5c5752;
-  height: 18px;
+  outline: 1px solid rgb(150, 150, 150);
+  height: 17px;
   width: 18px;
   border-radius: 50%;
+  position: relative;
+  margin-bottom: 5px;
 }
+
+.checkbox-1, .checkbox-2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e47911;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.checkbox-2 {
+  display: none;
+  background-color: #e79a4c;
+}
+
+.language-container:hover .checkbox-2 {
+  display: block;
+  
+}
+
+.language-container:hover .language{
+  color: orange;
+  text-decoration: underline;
+}
+
+
 
 .language-container {
   display: flex;
@@ -152,7 +181,16 @@ option {
 }
 
 .read-more {
-  width: 77%;
+  width: 90%;
+  position: absolute;
+  right: 0px;
+
+  margin-top: 30px;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+.change-country {
+  width: 89%;
   position: absolute;
   right: 0px;
 
@@ -171,6 +209,10 @@ option {
   text-decoration: underline;
   text-decoration-color: orange;
   text-decoration-thickness: 0.35mm;
+}
+
+.language-swe-flag {
+  width: 18px;
 }
 
 /*Funkar inte, vet inte varför*/
