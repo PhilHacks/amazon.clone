@@ -115,7 +115,8 @@ option {
   padding: 10px;
   display: none;
   border-radius: 4px;
-  box-shadow: 1px 1px 5px 0px rgb(120, 120, 120);
+  box-shadow: 1px 1px 0px 0px rgb(120, 120, 120);
+  
 }
 
 .language-selector {
@@ -142,10 +143,32 @@ option {
   background-color: #e79a4c;
 }
 
+.arrow-up, .login-arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 44px;
+  
+  display: none;
+  border-bottom: 10px solid white;
+}
+
+.arrow-up {
+  right: 8px;
+}
+.login-arrow {
+  right: 2px;
+}
+
+
+
 .language-container:hover .checkbox-2 {
   display: block;
   
 }
+
 
 .language-container:hover .language{
   color: orange;
@@ -225,7 +248,28 @@ option {
   color: black;
 }
 
-.nav-flyout:hover .language-selector-container {
+.nav-flyout:hover .language-selector-container, .nav-flyout:hover .arrow-up {
+  display: block;
+}
+
+
+.login-flyout {
+  position: relative;
+}
+.account-login-container {
+  position: absolute;
+  left: -200%;
+  width: 500px;
+  height: 190px;
+  top: 100%;
+  padding: 10px;
+  background-color: white;
+  display: none;
+  box-shadow: 1px 1px 0px 0px rgb(220, 220, 220);
+  border-radius: 4px;
+}
+
+.login-flyout:hover .account-login-container, .login-flyout:hover .login-arrow {
   display: block;
 }
 
