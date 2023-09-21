@@ -167,7 +167,7 @@ option {
 }
 
 .language-container:hover .language {
-  color: orange;
+  color: #e47911;
   text-decoration: underline;
 }
 
@@ -216,7 +216,7 @@ option {
   background-color: transparent;
 }
 .language-option-link {
-  color: rgb(2, 91, 255);
+  color: #0066c0;
   font-weight: 500;
   text-decoration: none;
   margin-top: 5px;
@@ -234,7 +234,7 @@ option {
 
 /*Funkar inte, vet inte varför*/
 .language:hover {
-  color: orange;
+  color: #e47911;
 }
 
 .language-option .language {
@@ -252,38 +252,93 @@ option {
 }
 
 .login-container {
-  border-bottom: 1px solid rgb(150, 150, 150);
+  border-bottom: 1px solid rgb(200, 200, 200);
   width: 100%;
   height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-login-button {
+  padding: 8px 0px 8px 0px;
+  width: 230px;
+  background-color: #ffd814;
+  border:none;
+  border-radius: 7px;
+  font-size: 12px;
+
+  
+}
+
+.new-customer {
+  font-size: 11px;
 }
 
 .account-container {
   display: flex;
   width: 100%;
   height: 68%;
-  margin-top: 2%;
+  margin-top: 3%;
+}
+.begin-here {
+  
+  color: #0066c0;
+
+}
+.begin-here:hover {
+  color: #e47911;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .list {
   width: 50%;
-  border-right: 1px solid rgb(150, 150, 150);
+  border-right: 1px solid rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
 }
 
 .account {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
 }
+
+.account-login-headline {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.account-login-list-element {
+  font-size: 13px;
+  padding: 2px;
+}
+
+.account-login-list-element:hover {
+  color: #e47911;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
 
 .account-login-container {
   position: absolute;
-  left: -200%;
-  width: 500px;
-  height: 250px;
+  left: -190%;
+  width: 450px;
+  height: 270px;
   top: 100%;
-  padding: 10px 20px 10px 25px;
+  padding: 10px 20px 15px 25px;
   background-color: white;
   display: none;
   box-shadow: 1px 1px 0px 0px rgb(220, 220, 220);
   border-radius: 4px;
+  font-family: "amazon ember", sans-serif;
 }
 
 .login-flyout:hover .account-login-container,
@@ -603,4 +658,32 @@ option {
   justify-content: center; /* Places grind in the center of hortizontal axis */
   align-content: center;
   height: 100px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Grayish overlay with transparency */
+  display: none;
+  z-index: 80;
+}
+
+
+#side-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: lightblue;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+
 }

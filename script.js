@@ -24,3 +24,20 @@ selectElement.addEventListener("change", (event) => {
 //select visas som första alternativ
 
 //kod snut som vi kan återanvända
+
+
+// ----------- Side menu ------------
+
+/*
+const menu = document.getElementById('side-menu');
+const overlay = document.getElementById('overlay');
+const openSideMenuButton = document.getElementById('side-menu-button');
+
+openSideMenuButton.addEventListener('click', ()=>{
+  menu.style.left = 0;
+  overlay.style.display = 'block';
+});
+
+*/
+
+//TODO - Fixa så menyn försvinner igen!

@@ -7,6 +7,17 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
   <body class="body">
+    <div id="overlay"></div>
+    <div id="side-menu">
+      <span>Test</span>
+      <a>Test menu Item</a>
+      <a>Test menu Item</a>
+      <a>Test menu Item</a>
+      <a>Test menu Item</a>
+      <a>Test menu Item</a>
+      <a>Test menu Item</a>
+
+    </div>
     <header class="nav-belt">
       
       <!-- <div class="flex-container"> -->
@@ -123,14 +134,23 @@
         <img src="Images/logga in.png" />
         <div class="account-login-container">
           <div class="login-container">
-
+            <button class="account-login-button">Logga in</button>
+            <p class="new-customer">Är du en ny kund? <a class="begin-here">Börja här</a></p>
           </div>
           <div class="account-container">
             <div class="list">
-
+              <h3 class="account-login-headline">Dina listor</h3>
+              <a class="account-login-list-element">Skapa en lista</a>
             </div> 
             <div class="account">
-
+              <h3 class="account-login-headline">Ditt konto</h3>
+              <a class="account-login-list-element">Ditt konto</a>
+              <a class="account-login-list-element">Dina beställningar</a>
+              <a class="account-login-list-element">Köp igen</a>
+              <a class="account-login-list-element">Dina rekommendationer</a>
+              <a class="account-login-list-element">Innehåll och enheter</a>
+              <a class="account-login-list-element">Ditt Prime-medlemskap</a>
+              <a class="account-login-list-element">Sälj på Amazon</a>
             </div> 
           </div>
 
@@ -146,9 +166,9 @@
     </header>
     <!-- -->
     <div class="topnav">
-      <div>
+      <div id = "side-menu-button">
         <img src="images/trestreck.png" class id="trestreck" />
-        <a class="active" href="Alla">Alla</a>
+        <a class="active" href="#">Alla</a>
       </div>
       <a class="active" href="#Bästsäljare">Bästsäljare</a>
       <a class="active" href="#Kundtjänst">Kundtjänst</a>
