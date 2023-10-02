@@ -28,16 +28,33 @@ selectElement.addEventListener("change", (event) => {
 
 // ----------- Side menu ------------
 
-/*
-const menu = document.getElementById('side-menu');
+
+const sideMenu = document.getElementById('side-menu');
 const overlay = document.getElementById('overlay');
 const openSideMenuButton = document.getElementById('side-menu-button');
+let sideMenuOpen = false;
 
-openSideMenuButton.addEventListener('click', ()=>{
-  menu.style.left = 0;
+openSideMenuButton.addEventListener('click', (event)=>{
+  event.stopPropagation();
+  sideMenu.style.left = 0;
   overlay.style.display = 'block';
+  sideMenuOpen = true;
 });
 
-*/
+
+
+
 
 //TODO - Fixa så menyn försvinner igen!
+function handleClickOutsideSideMenu(event){
+  if(sideMenuOpen){
+    if(event.target !== sideMenu && !sideMenu.contains(event.target)){
+      sideMenu.style.left = '-350px';
+      overlay.style.display = 'none';
+      sideMenuOpen = false;
+    }
+  }
+}
+
+
+document.addEventListener('click', handleClickOutsideSideMenu);
