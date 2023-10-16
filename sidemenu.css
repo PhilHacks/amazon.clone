@@ -9,7 +9,6 @@
   z-index: 80;
 }
 
-
 #side-menu {
   position: fixed;
   z-index: 100;
@@ -23,7 +22,6 @@
 
   display: flex;
   flex-direction: column;
-
 }
 
 #side-menu-img {
@@ -38,13 +36,12 @@
   background-color: #232f3e;
   display: flex;
   align-items: center;
-
 }
 
 .menu-container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(200,200,200);
+  border-bottom: 1px solid rgb(200, 200, 200);
   padding: 5px 0px;
 }
 
@@ -58,6 +55,12 @@
   font-size: 20px;
 }
 
-.menu-container div {
-  padding:  8px 40px;
+.menu-container a {
+  padding: 8px 40px;
+}
+
+#hidden-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
 }

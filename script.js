@@ -7,7 +7,7 @@ const selectElement = document.querySelector(".select");
 // textContent slägger dock bara igenom text och är svårara att "hacka" med fult innehåll.
 // buttonLabel.textContent = "Alla kategorier...";
 
-buttonLabel.textContent = selectElement.options[0].textContent + ' ⯆';
+buttonLabel.textContent = selectElement.options[0].textContent + " ⯆";
 
 // En eventlyssnare sätts här på select-elementet och lyssnar på förändringar (change).
 // När selecten byter värde så triggas funktionen där som tar in ett sk. event för ändringen.
@@ -17,7 +17,7 @@ selectElement.addEventListener("change", (event) => {
   const selectedIndex = event.target.selectedIndex;
   const selectedOption = event.target.options[selectedIndex];
   const optionText = selectedOption.textContent;
-  buttonLabel.textContent = optionText + ' ⯆';
+  buttonLabel.textContent = optionText + " ⯆";
 });
 
 //rad att hämtar från select (value)
@@ -25,36 +25,39 @@ selectElement.addEventListener("change", (event) => {
 
 //kod snut som vi kan återanvända
 
-
 // ----------- Side menu ------------
 
-
-const sideMenu = document.getElementById('side-menu');
-const overlay = document.getElementById('overlay');
-const openSideMenuButton = document.getElementById('side-menu-button');
+const sideMenu = document.getElementById("side-menu");
+const overlay = document.getElementById("overlay");
+const openSideMenuButton = document.getElementById("side-menu-button");
 let sideMenuOpen = false;
 
-openSideMenuButton.addEventListener('click', (event)=>{
+openSideMenuButton.addEventListener("click", (event) => {
   event.stopPropagation();
   sideMenu.style.left = 0;
-  overlay.style.display = 'block';
+  overlay.style.display = "block";
   sideMenuOpen = true;
 });
 
-
-
-
-
-//TODO - Fixa så menyn försvinner igen!
-function handleClickOutsideSideMenu(event){
-  if(sideMenuOpen){
-    if(event.target !== sideMenu && !sideMenu.contains(event.target)){
-      sideMenu.style.left = '-350px';
-      overlay.style.display = 'none';
+function handleClickOutsideSideMenu(event) {
+  if (sideMenuOpen) {
+    if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
+      sideMenu.style.left = "-350px";
+      overlay.style.display = "none";
       sideMenuOpen = false;
     }
   }
 }
 
+document.addEventListener("click", handleClickOutsideSideMenu);
 
-document.addEventListener('click', handleClickOutsideSideMenu);
+const showButton = document.getElementById("show");
+const hideMenu = document.getElementById("hidden-menu");
+
+showButton.addEventListener("click", (event) => {
+  event.stopPropagation();
+  hideMenu.style.display = "flex";
+  showButton.textContent = "visa färre";
+});
+
+//TODO få visa alla att gå tillbaka knappen ska byta namn
