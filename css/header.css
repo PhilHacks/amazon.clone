@@ -1,15 +1,15 @@
-* {
+@import url("http://fonts.cdnfonts.com/css/amazon-ember"); /* font url */
+/* * {/* universal selektor som påverkar alla element 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   margin: 0;
   font-family: "amazon ember", sans-serif;
 }
 
-<<<<<<< Updated upstream:style.css
 .nav-belt > * {
   margin: 10px;
 }
@@ -265,11 +265,9 @@ option {
   padding: 8px 0px 8px 0px;
   width: 230px;
   background-color: #ffd814;
-  border:none;
+  border: none;
   border-radius: 7px;
   font-size: 12px;
-
-  
 }
 
 .new-customer {
@@ -283,9 +281,7 @@ option {
   margin-top: 3%;
 }
 .begin-here {
-  
   color: #0066c0;
-
 }
 .begin-here:hover {
   color: #e47911;
@@ -323,9 +319,6 @@ option {
   cursor: pointer;
   text-decoration: underline;
 }
-
-
-
 
 .account-login-container {
   position: absolute;
@@ -371,173 +364,63 @@ option {
 
 .topnav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #232f3e;
   font-size: 14px;
-  width: 40%;
+  width: 100%;
   height: 25px;
-  padding: 7px 60% 7px 0px;
-  margin: 0px 0px 0px 0px;
+  margin-right: 20px;
+  /* padding: 7px 60% 7px 0px;
+  margin: 0px 0px 0px 0px; */
   /* border-style: solid; */
   /* border-color: blue; */
 }
 
 .topnav > * {
-  margin: 10px;
-  /* border-style: solid; */
+  margin-right: 40px;
 }
+
+/* Ta bort margin-right från det sista elementet för att undvika extra utrymme på slutet */
+.topnav > *:last-child {
+  margin-right: 0;
+}
+
 .huvudbox {
   margin-left: 10%;
   margin-right: 10%;
   width: auto;
 }
 
-/* .flex-container {
- 
-} */
-
-.Outer-box {
-  /*   display: flex;
-  justify-content: row;
-  flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 420px);
-  /* grid-auto-rows: minmax(50px); */
-  margin-top: -350px;
-  border-style: solid;
-  width: 100%;
-
-  /* grid-auto-rows: minmax(
-    150px,
-    auto
-  ) Gör alla rader minst 150px och max auto höga 
-  grid-gap: 20px; /* Definerar margin på både row och column samtidigt */
-  /* justify-content: center; 
-  align-content: center;
-  height: 100px; */
-}
-
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* min-width: 23%;
-  width: 23%;
-  min-height: 50px; */
-  height: 90%;
-  /* border-style: solid; */
-
-  outline: 0.2vw solid red;
-  background-color: white;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin: 10px;
-}
-
-.product-card .product-card-wrap .box1 > img {
-  width: 100%;
-  height: 144%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.product-card .product-card-wrap .box3 > img {
-  width: 100%;
-}
-
-.product-card-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: 0.2vw solid lightblue;
-  width: 90%;
-  height: 100%;
-  overflow: clip;
-}
-
-.product-card-headline {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-/*
-    # är för id i html
-    .är för class i html
-*/
-=======
->>>>>>> Stashed changes:css/style.css
-.active {
-  text-decoration: none;
-  color: #ffffff;
-  font: amazon ember light;
-  margin-left: 5px;
-}
-
-.blue-links {
-  display: flex;
-  justify-content: flex-start;
-  width: 90%;
-  text-decoration: none;
-}
-
-.small-blue-link {
-  text-decoration: none;
-}
-
-.ny-kund-div {
-  display: flex;
-  flex-direction: row;
-}
-
-.navfooter {
-  background-color: #37475a;
-  width: 100%;
-  height: 49px;
-}
-
-.back-to-top-button {
+.loginbutton {
   font-family: "amazon ember", sans-serif;
-  color: white;
-  background-color: transparent;
+  color: #0f1111;
+  background-color: #ffd814;
   width: 100%;
-  height: 100%;
-  border-style: none;
-}
-
-.back-to-top-button:hover {
-  background-color: #485769;
-}
-
-.bottomnav {
-  background-color: #232f3e;
-  width: 100%;
-  height: 500px;
-}
-
-.footer {
-  display: block;
-  background-color: #131a22;
-
-  width: 100%;
-  height: 139.38px;
-  color: #dddddd;
-  text-align: center;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat (4, 100px); /* Detta ger 4 boxar som alla är 100px */
-  grid-auto-rows: minmax(
-    150px,
-    auto
-  ); /* Gör alla rader minst 150px och max auto höga */
-  grid-gap: 20px; /* Definerar margin på både row och column samtidigt */
-  justify-content: center; /* Places grind in the center of hortizontal axis */
-  align-content: center;
   height: 100px;
+  border-radius: 4px;
+  /* overflow: visible; */
 }
 
+.sign-in-button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: "white";
+  height: 142px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.loginbuttonNedre {
+  font-family: "amazon ember", sans-serif;
+  color: #0f1111;
+  background-color: #ffd814;
+  width: 230px;
+  height: 28px;
+  border-radius: 4px;
+  position: relative;
+}
