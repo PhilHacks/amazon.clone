@@ -53,11 +53,24 @@ document.addEventListener("click", handleClickOutsideSideMenu);
 
 const showButton = document.getElementById("show");
 const hideMenu = document.getElementById("hidden-menu");
+let hiddenMenuShown = false;
+
 
 showButton.addEventListener("click", (event) => {
   event.stopPropagation();
-  hideMenu.style.display = "flex";
-  showButton.textContent = "visa färre";
+  if(hiddenMenuShown){
+    hideMenu.style.display = "none";
+    showButton.textContent = "Visa alla";
+    hiddenMenuShown = false;
+    
+  }
+  else {
+    hideMenu.style.display = "flex";
+    showButton.textContent = "Visa färre";
+    hiddenMenuShown = true;
+    
+  }
+  
 });
 
 //TODO få visa alla att gå tillbaka knappen ska byta namn
