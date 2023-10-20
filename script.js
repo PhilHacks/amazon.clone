@@ -55,22 +55,17 @@ const showButton = document.getElementById("show");
 const hideMenu = document.getElementById("hidden-menu");
 let hiddenMenuShown = false;
 
-
 showButton.addEventListener("click", (event) => {
   event.stopPropagation();
-  if(hiddenMenuShown){
+  if (hiddenMenuShown) {
     hideMenu.style.display = "none";
     showButton.textContent = "Visa alla";
     hiddenMenuShown = false;
-    
-  }
-  else {
+  } else {
     hideMenu.style.display = "flex";
     showButton.textContent = "Visa färre";
     hiddenMenuShown = true;
-    
   }
-  
 });
 
 //TODO få visa alla att gå tillbaka knappen ska byta namn
