@@ -9,8 +9,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 420px);
   margin-top: -350px;
-  border-style: solid;
   width: 100%;
+  background: lightgray;
 }
 
 .product-card {
@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   height: 90%;
-  outline: 0.2vw solid red;
   background-color: white;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -40,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 0.2vw solid lightblue;
   width: 90%;
   height: 100%;
   overflow: clip;
@@ -80,16 +78,7 @@
   border-bottom: 1px solid #ddd;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.loginbuttonNedre {
-  font-family: "amazon ember", sans-serif;
-  color: #0f1111;
-  background-color: #ffd814;
-  width: 230px;
-  height: 28px;
-  border-radius: 4px;
-  position: relative;
+  background: white;
 }
 
 .ny-kund-div {
@@ -103,7 +92,6 @@
 
 .carousel {
   width: 100%;
-  border-style: solid;
 }
 
 .text-medium {
@@ -146,8 +134,6 @@
   overflow: clip;
   position: relative;
   margin-bottom: 10%;
-  border-style: solid;
-  border-color: #1e9c48;
 }
 .multi-image-container {
   display: flex;
@@ -155,13 +141,9 @@
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  border-style: solid;
-  border-color: #22131b;
 }
 .giftcard-container {
   width: 100%;
-  border-style: solid;
-  border-color: #22131b;
 }
 
 .watch-gallery {
@@ -192,4 +174,14 @@
   justify-content: center; /* Places grind in the center of hortizontal axis */
   align-content: center;
   height: 100px;
+}
+
+.loginbuttonNedre {
+  font-family: "amazon ember", sans-serif;
+  color: #0f1111;
+  background-color: #ffd814;
+  width: 230px;
+  height: 28px;
+  border-radius: 4px;
+  position: relative;
 }
