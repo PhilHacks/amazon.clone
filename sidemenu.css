@@ -60,11 +60,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .menu-container a:hover {
-  background-color: rgb(230,230,230);
+  background-color: rgb(230, 230, 230);
 }
 
 #hidden-menu {
@@ -72,25 +71,20 @@
   flex-direction: column;
   width: 100%;
   border-top: 1px solid rgb(200, 200, 200);
-  
-  
 }
-
 
 .arrow {
   border: solid #292929;
   border-width: 1px 1px 0 0;
   display: inline-block;
-  padding: 0.8mm; 
+  padding: 0.8mm;
   margin-bottom: 2px;
   margin-left: 4px;
-  
 }
 .right {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
 
 .menu-container a:hover i {
   border-color: red;

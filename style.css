@@ -57,7 +57,7 @@ body {
   display: inline-block;
 }
 
-.button-ish {
+.search-toggle-button {
   display: inline-block;
   height: 100%;
   padding-left: 7px;
@@ -68,7 +68,7 @@ body {
   border-bottom-left-radius: 5px;
 }
 
-.button-container:hover .button-ish {
+.button-container:hover .search-toggle-button {
   background-color: #dbdbdb;
   color: #0f1111;
 }
