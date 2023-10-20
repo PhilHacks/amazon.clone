@@ -1,0 +1,187 @@
+.main-box {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+}
+
+.Outer-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 420px);
+  margin-top: -350px;
+  width: 100%;
+  background: lightgray;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+.product-card .product-card-wrap .single-image-container > img {
+  width: 100%;
+  height: 144%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product-card .product-card-wrap .giftcard-container > img {
+  width: 100%;
+}
+
+.product-card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow: clip;
+}
+
+.product-card-headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.active {
+  text-decoration: none;
+  color: #ffffff;
+  font: amazon ember light;
+  margin-left: 5px;
+}
+
+.loginbutton {
+  font-family: "amazon ember", sans-serif;
+  color: #0f1111;
+  background-color: #ffd814;
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.sign-in-button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: "white";
+  height: 142px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.ny-kund-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.small-blue-link {
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.text-medium {
+  font-size: 13px;
+}
+
+.text-small {
+  font-size: 11px;
+}
+
+.blue-links {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  text-decoration: none;
+}
+
+.product-card.household {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  background-color: aqua;
+  justify-content: space-between;
+}
+
+.product-card.deal {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  height: 10%;
+  justify-content: space-between;
+}
+
+.single-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: cover;
+  overflow: clip;
+  position: relative;
+  margin-bottom: 10%;
+}
+.multi-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.giftcard-container {
+  width: 100%;
+}
+
+.watch-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.product-card .product-card-wrap .multi-image-container .watch-gallery > img {
+  width: 100%;
+}
+
+.product-card .product-card-wrap .multi-image-container .watch-gallery > p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat (4, 100px); /* Detta ger 4 boxar som alla är 100px */
+  grid-auto-rows: minmax(
+    150px,
+    auto
+  ); /* Gör alla rader minst 150px och max auto höga */
+  grid-gap: 20px; /* Definerar margin på både row och column samtidigt */
+  justify-content: center; /* Places grind in the center of hortizontal axis */
+  align-content: center;
+  height: 100px;
+}
+
+.loginbuttonNedre {
+  font-family: "amazon ember", sans-serif;
+  color: #0f1111;
+  background-color: #ffd814;
+  width: 230px;
+  height: 28px;
+  border-radius: 4px;
+  position: relative;
+}
