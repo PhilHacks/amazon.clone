@@ -10,6 +10,7 @@
   grid-template-rows: repeat(2, 420px);
   margin-top: -350px;
   width: 100%;
+  padding-bottom: 10px;
   background: lightgray;
 }
 
@@ -176,7 +177,7 @@
   height: 100px;
 }
 
-.loginbuttonNedre {
+.sign-in-button-bottom {
   font-family: "amazon ember", sans-serif;
   color: #0f1111;
   background-color: #ffd814;
