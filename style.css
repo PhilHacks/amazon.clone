@@ -480,6 +480,14 @@ option {
   border-style: solid;
 }
 
+.text-medium {
+  font-size: 13px;
+}
+
+.text-small {
+  font-size: 11px;
+}
+
 .blue-links {
   display: flex;
   justify-content: flex-start;
