@@ -37,6 +37,11 @@ body {
   width: 130px;
 }
 
+.choose-adress-image {
+  height: 50px;
+  width: 114px;
+}
+
 .search-module {
   display: flex;
   width: 100%;
