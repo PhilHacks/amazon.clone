@@ -1,0 +1,305 @@
+.nav-belt > * {
+  margin: 10px;
+}
+
+.nav-belt {
+  background-color: #131921;
+  padding-top: 5px;
+  padding-right: -5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: relative;
+}
+
+.nav-belt-button:hover {
+  outline: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+.show {
+  display: block;
+}
+
+.amazon-logo-image {
+  height: 50px;
+  width: 130px;
+}
+
+.choose-adress-image {
+  height: 50px;
+  width: 114px;
+}
+
+.nav-flyout {
+  position: relative;
+  display: inline-block;
+}
+
+.language-selector-container {
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 0;
+  width: 210px;
+  height: 190px;
+  top: 100%;
+  padding: 10px;
+  display: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px 0px rgb(120, 120, 120);
+}
+
+.language-selector {
+  outline: 1px solid rgb(150, 150, 150);
+  height: 17px;
+  width: 18px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.checkbox-1,
+.checkbox-2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e47911;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.checkbox-2 {
+  display: none;
+  background-color: #e79a4c;
+}
+
+.arrow-up,
+.login-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 45px;
+  display: none;
+  border-bottom: 10px solid white;
+}
+
+.arrow-up {
+  right: 8px;
+}
+.login-arrow {
+  right: 2px;
+}
+
+.language-container:hover .checkbox-2 {
+  display: block;
+}
+
+.language-container:hover .language {
+  color: #e47911;
+  text-decoration: underline;
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  margin: 3px 0px;
+}
+.language-option {
+  background-color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.option-style {
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.read-more-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.read-more {
+  width: 90%;
+  position: absolute;
+  right: 0px;
+
+  margin-top: 30px;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+.change-country {
+  width: 89%;
+  position: absolute;
+  right: 0px;
+
+  margin-top: 30px;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+.language-option-link {
+  color: #0066c0;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.language-option-link:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.35mm;
+}
+
+.language-swe-flag {
+  width: 18px;
+}
+
+.language-option .language {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-flyout:hover .language-selector-container,
+.nav-flyout:hover .arrow-up {
+  display: block;
+}
+
+.login-flyout {
+  position: relative;
+}
+
+.login-container {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-login-button {
+  padding: 8px 0px 8px 0px;
+  width: 230px;
+  background-color: #ffd814;
+  border: none;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.new-customer {
+  font-size: 11px;
+}
+
+.account-container {
+  display: flex;
+  width: 100%;
+  height: 68%;
+  margin-top: 3%;
+}
+.begin-here {
+  color: #0066c0;
+}
+.begin-here:hover {
+  color: #e47911;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.list {
+  width: 50%;
+  border-right: 1px solid rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
+}
+
+.account {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.account-login-headline {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.account-login-list-element {
+  font-size: 13px;
+  padding: 2px;
+}
+
+.account-login-list-element:hover {
+  color: #e47911;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.account-login-container {
+  position: absolute;
+  left: -190%;
+  width: 450px;
+  height: 270px;
+  top: 100%;
+  padding: 10px 20px 15px 25px;
+  background-color: white;
+  display: none;
+  box-shadow: 1px 1px 0px 0px rgb(220, 220, 220);
+  border-radius: 4px;
+  font-family: "amazon ember", sans-serif;
+}
+
+.login-flyout:hover .account-login-container,
+.login-flyout:hover .login-arrow {
+  display: block;
+}
+
+.input-div {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.searchbar-class {
+  flex: 1;
+  padding: 0;
+  border: 0;
+}
+
+.search-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #232f3e;
+  font-size: 14px;
+  width: 40%;
+  height: 25px;
+  padding: 7px 60% 7px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.topnav > * {
+  margin: 10px;
+}
