@@ -68,8 +68,6 @@ showButton.addEventListener("click", (event) => {
   }
 });
 
-//TODO få visa alla att gå tillbaka knappen ska byta namn
-
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
