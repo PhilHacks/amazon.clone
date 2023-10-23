@@ -55,9 +55,7 @@ showButton.addEventListener("click", (event) => {
 });
 
 // ----------- scrollToTop Function ------------
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 const backButton = document.querySelector(".back-to-top-button");
 
