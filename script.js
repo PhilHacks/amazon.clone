@@ -24,7 +24,7 @@ openSideMenuButton.addEventListener("click", (event) => {
   sideMenuOpen = true;
 });
 
-function handleClickOutsideSideMenu(event) {
+const handleClickOutsideSideMenu = (event) => {
   if (sideMenuOpen) {
     if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
       sideMenu.style.left = "-350px";
@@ -32,7 +32,7 @@ function handleClickOutsideSideMenu(event) {
       sideMenuOpen = false;
     }
   }
-}
+};
 
 document.addEventListener("click", handleClickOutsideSideMenu);
 
