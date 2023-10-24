@@ -1,15 +1,19 @@
 // ----------- Dropdown Button Label Update ------------
-const buttonLabel = document.querySelector(".button-label");
-const selectElement = document.querySelector(".select");
+const getSelectedOptionText = () => {
+  const selectElement = document.querySelector(".select");
+  const selectedOption = selectElement.options[selectElement.selectedIndex];
+  return selectedOption.textContent;
+};
 
-buttonLabel.textContent = selectElement.options[0].textContent + " ⯆";
+const updateButtonLabel = () => {
+  const buttonLabel = document.querySelector(".button-label");
+  const selectedOptionText = getSelectedOptionText();
+  buttonLabel.textContent = selectedOptionText + " ⯆";
+};
 
-selectElement.addEventListener("change", (event) => {
-  const selectedIndex = event.target.selectedIndex;
-  const selectedOption = event.target.options[selectedIndex];
-  const optionText = selectedOption.textContent;
-  buttonLabel.textContent = optionText + " ⯆";
-});
+document.querySelector(".select").addEventListener("change", updateButtonLabel);
+
+updateButtonLabel();
 
 // ----------- Side menu toggle ------------
 const sideMenu = document.getElementById("side-menu");
