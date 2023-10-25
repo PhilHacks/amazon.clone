@@ -21,14 +21,19 @@ const overlay = document.getElementById("overlay");
 const openSideMenuButton = document.getElementById("side-menu-button");
 let sideMenuOpen = false;
 
-openSideMenuButton.addEventListener("click", (event) => {
+const initializeSideMenuEvents = () => {
+  openSideMenuButton.addEventListener("click", openMenu);
+  document.addEventListener("click", closeMenu);
+};
+
+const openMenu = (event) => {
   event.stopPropagation();
   sideMenu.style.left = 0;
   overlay.style.display = "block";
   sideMenuOpen = true;
-});
+};
 
-const handleClickOutsideSideMenu = (event) => {
+const closeMenu = (event) => {
   if (sideMenuOpen) {
     if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
       sideMenu.style.left = "-350px";
@@ -38,7 +43,7 @@ const handleClickOutsideSideMenu = (event) => {
   }
 };
 
-document.addEventListener("click", handleClickOutsideSideMenu);
+document.addEventListener("DOMContentLoaded", initializeSideMenuEvents);
 
 // ----------- Hidden menu toggle ------------
 const showButton = document.getElementById("show");
