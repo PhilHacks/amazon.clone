@@ -45,23 +45,6 @@ const closeMenu = (event) => {
 document.addEventListener("DOMContentLoaded", initializeSideMenuEvents);
 
 // ----------- Hidden menu toggle ------------
-// const showButton = document.getElementById("show");
-// const hideMenu = document.getElementById("hidden-menu");
-// let hiddenMenuShown = false;
-
-// showButton.addEventListener("click", (event) => {
-//   event.stopPropagation();
-//   if (hiddenMenuShown) {
-//     hideMenu.style.display = "none";
-//     showButton.textContent = "Visa alla";
-//     hiddenMenuShown = false;
-//   } else {
-//     hideMenu.style.display = "flex";
-//     showButton.textContent = "Visa färre";
-//     hiddenMenuShown = true;
-//   }
-// });
-
 const showButton = document.getElementById("show");
 const hiddenMenuElement = document.getElementById("hidden-menu");
 let hiddenMenuShown = false;
