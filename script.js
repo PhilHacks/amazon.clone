@@ -43,25 +43,32 @@ const closeMenu = (event) => {
   }
 };
 
+// Ensures event listeners are initialized after document load.
 document.addEventListener("DOMContentLoaded", initializeSideMenuEvents);
 
 // ----------- Hidden menu toggle ------------
 const showButton = document.getElementById("show");
-const hideMenu = document.getElementById("hidden-menu");
+const hiddenMenuElement = document.getElementById("hidden-menu");
 let hiddenMenuShown = false;
 
-showButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  if (hiddenMenuShown) {
-    hideMenu.style.display = "none";
-    showButton.textContent = "Visa alla";
-    hiddenMenuShown = false;
-  } else {
-    hideMenu.style.display = "flex";
-    showButton.textContent = "Visa färre";
-    hiddenMenuShown = true;
-  }
-});
+const initializeShowButton = () => {
+  showButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    return hiddenMenuShown ? hideToggle() : showToggle();
+  });
+};
+
+const showMenu = () => {
+  hiddenMenuElement.style.display = "none";
+  showButton.textContent = "Visa alla";
+  hiddenMenuShown = false;
+};
+
+const hideMenu = () => {
+  hiddenMenuElement.style.display = "flex";
+  showButton.textContent = "Visa färre";
+  hiddenMenuShown = true;
+};
 
 // ----------- scrollToTop ------------
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
