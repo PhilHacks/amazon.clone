@@ -19,7 +19,6 @@ updateButtonLabel();
 const sideMenu = document.getElementById("side-menu");
 const overlay = document.getElementById("overlay");
 const openSideMenuButton = document.getElementById("side-menu-button");
-let sideMenuOpen = false;
 
 const initializeSideMenuEvents = () => {
   openSideMenuButton.addEventListener("click", openMenu);
@@ -30,14 +29,12 @@ const openMenu = (event) => {
   event.stopPropagation();
   sideMenu.style.left = 0;
   overlay.style.display = "block";
-  sideMenuOpen = true;
 };
 
 const closeMenu = (event) => {
   if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
     sideMenu.style.left = "-350px";
     overlay.style.display = "none";
-    sideMenuOpen = false;
   }
 };
 
