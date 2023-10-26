@@ -34,12 +34,10 @@ const openMenu = (event) => {
 };
 
 const closeMenu = (event) => {
-  if (sideMenuOpen) {
-    if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
-      sideMenu.style.left = "-350px";
-      overlay.style.display = "none";
-      sideMenuOpen = false;
-    }
+  if (event.target !== sideMenu && !sideMenu.contains(event.target)) {
+    sideMenu.style.left = "-350px";
+    overlay.style.display = "none";
+    sideMenuOpen = false;
   }
 };
 
