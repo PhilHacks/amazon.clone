@@ -59,6 +59,10 @@
   margin-left: 5px;
 }
 
+#side-menu-button:hover {
+  cursor: pointer;
+}
+
 .loginbutton {
   font-family: "amazon ember", sans-serif;
   color: #0f1111;

@@ -16,9 +16,9 @@ document.querySelector(".select").addEventListener("change", updateButtonLabel);
 updateButtonLabel();
 
 // ----------- Side menu toggle ------------
-const sideMenu = document.getElementById("side-menu");
-const overlay = document.getElementById("overlay");
-const openSideMenuButton = document.getElementById("side-menu-button");
+const sideMenu = document.querySelector(".side-menu");
+const overlay = document.querySelector(".overlay");
+const openSideMenuButton = document.querySelector("#side-menu-button");
 
 const initializeSideMenuEvents = () => {
   openSideMenuButton.addEventListener("click", openMenu);
@@ -42,8 +42,9 @@ const closeMenu = (event) => {
 document.addEventListener("DOMContentLoaded", initializeSideMenuEvents);
 
 // ----------- Hidden menu toggle ------------
-const showButton = document.getElementById("show");
-const hiddenMenuElement = document.getElementById("hidden-menu");
+//const showButton = document.getElementById("show");
+const showButton = document.querySelector(".show");
+const hiddenMenuElement = document.querySelector(".hidden-menu");
 let hiddenMenuShown = false;
 
 const hideMenu = () => {
