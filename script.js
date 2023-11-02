@@ -48,13 +48,15 @@ let hiddenMenuShown = false;
 
 const hideMenu = () => {
   hiddenMenuElement.style.display = "none";
-  showButton.textContent = "Visa alla";
+  // showButton.textContent = "Visa alla";
+  showButton.innerHTML = "Visa alla<i class='arrow down'></i>";
   hiddenMenuShown = false;
 };
 
 const showMenu = () => {
   hiddenMenuElement.style.display = "flex";
-  showButton.textContent = "Visa färre";
+  // showButton.textContent = "Visa färre";
+  showButton.innerHTML = 'Visa färre<i class="arrow up"></i>';
   hiddenMenuShown = true;
 };
 
